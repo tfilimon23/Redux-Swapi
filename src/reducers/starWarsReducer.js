@@ -5,12 +5,13 @@ const initialState = {
   fetching: false,
   error: null
 };
-export const charsReducer = (state = initialState, action) => {
+export const  charsReducer = (state = initialState, action) => {
   switch (action.type) {
     case FETCHING:
     return {
       ...state,
-      fetching: true
+      fetching: true,
+      error:null
     }
     case SUCCESS:
     return {
